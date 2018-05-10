@@ -94,7 +94,7 @@ class DataGrid extends DataSet
         $delimiter['line_ending'] = isset($del['line_ending']) ? $del['line_ending'] : "\n";
 
         if ($save) {
-            $handle = fopen(public_path().'/'.dirname($file)."/".$filename, 'w');
+            $handle = fopen(storage_path().'/'.dirname($file)."/".$filename, 'w');
 
         } else {
 
